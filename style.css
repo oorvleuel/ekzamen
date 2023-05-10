@@ -1,0 +1,281 @@
+#ppp {
+    float: left;
+    margin-left: 10px;
+    display: inline-block;
+}
+#b1 {
+    float: left;
+    margin-left: 400px;
+    display: inline-block;
+    color: pink;
+}
+#b2 {
+    float: left;
+    margin-left: 410px;
+    display: inline-block;
+    color: pink;
+}
+#b3 {
+    float: left;
+    margin-left: 420px;
+    display: inline-block;
+    color: pink;
+}
+#b4 {
+    float: left;
+    margin-left: 450px;
+    display: inline-block;
+}
+#b5 {
+    float: left;
+    margin-left: 460px;
+    display: inline-block;
+}
+#b6 {
+    float: left;
+    margin-left: 470px;
+    display: inline-block;
+}
+
+.image {
+	position: relative;
+	width: min-content; 
+    height: min-content;
+}
+h2 {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 0%;
+}
+
+h2 span {
+	color: rgb(255, 255, 255);
+    font-size: 100px;
+	letter-spacing: -1px;
+}
+.image {
+    display: inline-block;
+}
+p {
+    color: pink;
+    
+}
+
+
+.card {
+    float: left;
+    margin-left: 30px;
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+}
+  
+  
+.card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+  
+.card__top {
+    flex: 0 0 220px; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+.card__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: 0.2s;
+}
+  
+.card__image:hover > img {
+    transform: scale(1.1);
+}
+  
+.card__label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: pink;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+  
+.card__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; 
+    padding: 10px;
+}
+  
+.card__prices {
+    display: flex;
+    margin-bottom: 10px;
+    flex: 0 0 50%; 
+}
+  
+.card__price::after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+}
+  
+.card__price--discount {
+    font-weight: 700;
+    font-size: 19px;
+    color: #414141;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+  
+.card__price--discount::before {
+    content: "Со скидкой";
+    font-weight: 400;
+    font-size: 13px;
+    color: #bfbfbf;
+}
+  
+.card__price--common {
+    font-weight: 400;
+    font-size: 17px;
+    color: #606060;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+}
+  
+.card__price--common::before {
+    content: "Обычная";
+    font-weight: 400;
+    font-size: 13px;
+    color: #bfbfbf;
+}
+  
+.card__title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #414141;
+}
+  
+  .card__title:hover {
+    color: pink;
+}
+  
+.card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #70c05b;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer; 
+    transition: 0.2s;
+    margin-top: auto;
+}
+  
+  .card__add:hover {
+    border: 1px solid pink;
+    background-color: pink;
+    color: #fff;
+}
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    justify-items: center; 
+    column-gap: 30px; 
+    row-gap: 40px; 
+    margin: 0 auto;
+  }
+
+.line {
+    border-bottom: 5px solid pink; 
+}
+
+.arrow-1 {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    margin: 20px;
+}
+.arrow-1 div {
+    position: relative;
+    top: 20px;
+    width: 90px;
+    height: 10px;
+    background-color: pink;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    left:0;
+    display: block;
+}
+.arrow-1 div::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: -11px;
+    right: -8px;
+    background-color: pink;
+    transform: rotate(45deg);
+}
+.arrow-1 div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: 11px;
+    right: -8px;
+    background-color: pink;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.arrow-1:hover {
+    animation: arrow-1 1s linear infinite;
+}
+@keyframes arrow-1 {
+    0% {
+        left:0;
+    }
+    50% {
+        left:10px;
+    }
+    100% {
+        left:0;
+    }
+}
+
+#block1 {
+    float: left;
+    margin-left: 70px;
+    display: inline-block;
+}
